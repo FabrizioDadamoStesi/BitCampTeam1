@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA CONTATTI</title>
+    <style>
+    body{
+        background-color: #291514;
+    }
+    header{
+            background-color:#75504e;
+            text-align: center;
+            padding: 10px 0;
+
+        }
+        .newsletter{
+            background-color: #fff;
+            padding:20px;
+            margin: 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow:0 0 10px #333;
+        }
+        .newsletter h2{
+            text-align: center;
+        }
+        .newsletter form{
+            display: table;
+            margin: 0 auto;
+        }
+        .newsletter label,
+        .newsletter input{
+            display: table-row;
+            padding: 10px;
+        }
+    </style>
+ </head>
+<body >
+    <header>
+        <h1>BENVENUTO NELL PAGINA PRENOTAZIONE TAVOLI</h1>
+    </header>
+    <main>
+        <section style="color: white;">
+            <h2>A DISPOSIZIONE:</h2>
+            <ul>
+             <li><strong>SPAZIO INTERNO</strong></li>
+             <li><strong>SPAZIO  ESTERNO</strong></li>
+             <li><strong>EVENTI</strong></li>
+             <li><strong>SERATE</strong></li>
+             <li><strong>TAVOLI</strong></li>
+            </ul>
+        </section>
+                   <section>
+                    <form method="get">
+                        <div class="newsletter">
+                            <h2>MODULO PRENOTAZIONE TAVOLO</h2>
+                            <form action="process.php"method="post">
+                                <label for="spazio">INTERNO O ESTERNO:</label>
+                                <input type="radio"id="spazio"name="spazio"value="spazio">
+                                <label for="spazio">interno</label><br>
+                                <input type="radio"id="spazio"name="spazio"value="spazio">
+                                <label for="spazio">esterno</label><br>
+                                <table>
+                                    <tr>
+                                        <td><label for="nome">Inserisci Nome:</label></td>
+                                        <td><input type="nome" name="nome" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="cognome">Inserisci Cognome:</label></td>
+                                        <td><input type="cognome" name="cognome" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="numeroospiti">Inserisci numero ospiti:</label></td>
+                                        <td><input type="numeroospiti" name="numeroospiti" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="data">Inserisci data:</label></td>
+                                        <td><input type="data" name="data" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="orario">Inserisci orario:</label></td>
+                                        <td><input type="orario" name="orario" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="numerotelefono">Inserisci numero telefono:</label></td>
+                                        <td><input type="numerotelefono" name="numerotelefono" required></td>
+                                    </tr>
+                                    <label for="tipoevento">HAI BISOGNO DI:</label>
+                                    <select id="tipoevento"name="tipoevento">
+                                      <option value="serata">serata</option>
+                                      <option value="tavolo">tavolo</option> 
+                                      <option value="eventi">eventi</option> 
+                                    </select><br>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="submit" value="conferma"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </form>
+                    </section>
+    </main>
+                     <footer>
+                        <header>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">homePage</a></li>
+                                <li><a href="menu.html">menu</a></li>
+                                <li><a href="">chi siamo</a></li>
+                                <li><a href="contatti.html">contatti</a></li>
+                                
+                            </ul>
+                          </nav>
+                        </header>
+
+                     </footer>
+    
+</body>
+</html>
